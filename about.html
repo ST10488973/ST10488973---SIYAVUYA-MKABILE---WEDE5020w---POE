@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,24 +16,57 @@
             <a href="contactus.html">Contact Us</a>
         </nav>
     </header>
-    <section class="hero">
-        <img src="images/Company logo.png" alt="Company logo" style="width:120px;height:120px;">
-        <h1>About Us</h1>
-        <p>Professional Plumbing Services You Can Trust</p>
-    </section>
+
     <main>
-        <section class="about-content">
-            <h1>Who We Are</h1>
-            <p>We are committed to providing the best plumbing services and solving any minor to major plumbing inconveniences that might occur.</p>
-            <p>Our team of experienced plumbers is dedicated to ensuring customer satisfaction and delivering high-quality workmanship.</p>
-            <p>We offer a wide range of plumbing services, including installation, repair, and maintenance of plumbing systems.</p>
-            <p>Our mission is to provide reliable and efficient plumbing solutions to our clients.</p>
-            <p>Contact us for more information or to schedule a service.</p>
-        </section>
+        <h1>About Us</h1>
+        <p>We are committed to providing the best plumbing services and solving any minor to major plumbing inconveniences that might occur.</p>
+        <p>Our team of experienced plumbers is dedicated to ensuring customer satisfaction and delivering high-quality workmanship.</p>
+
+        <h2 style="margin-top:18px">Accordion Example</h2>
+        <div class="accordion" aria-label="FAQ accordion">
+            <div class="accordion-item open">
+                <button class="accordion-header">What areas do you serve?</button>
+                <div class="accordion-body">We serve Gauteng province and surrounding areas; contact us for specifics.</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Do you offer emergency response?</button>
+                <div class="accordion-body">Yes — we provide 24/7 emergency plumbing services for urgent issues.</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Do you provide quotes?</button>
+                <div class="accordion-body">We provide free quotes for most standard installations and can supply written estimates.</div>
+            </div>
+        </div>
+
+        <h2 style="margin-top:18px">Tabs Example</h2>
+        <div class="tabs" aria-label="Service details tabs">
+            <div class="tab-list" role="tablist">
+                <button role="tab" aria-selected="true">Plumbing</button>
+                <button role="tab" aria-selected="false">Installations</button>
+                <button role="tab" aria-selected="false">Maintenance</button>
+            </div>
+            <div role="tabpanel">We handle general plumbing, leak repair and pipe replacement.</div>
+            <div role="tabpanel" hidden>Full bathroom and kitchen installations with modern fittings.</div>
+            <div role="tabpanel" hidden>Scheduled maintenance, geyser servicing and drain cleaning.</div>
+        </div>
+
+        <h2 style="margin-top:18px">Modal Example</h2>
+        <div class="demo-row">
+            <button data-modal-target="#demoModal">Open Demo Modal</button>
+        </div>
+
+        <div class="modal" id="demoModal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal-dialog">
+                <h3>Quick Contact</h3>
+                <p>Please call <strong>065 545 4705</strong> or send an email to <em>MKplumbing@example.com</em>.</p>
+                <div style="margin-top:12px;text-align:right">
+                    <button class="modal-close">Close</button>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 MK Plumbing. All rights reserved.</p>
-    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
